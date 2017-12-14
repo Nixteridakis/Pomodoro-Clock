@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="clock.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+     <div class="mainTitle">Pomodoro Clock <p class="dots">.....</p></div>
+    
+  <div class="containers">
+    <canvas id="clock" width="600" height="600"></canvas>
+    <div id="time">
+      <h class="time-all" id="mns1"></h>
+      <h class="time-all" id="mns2"></h>
+      <h id="semi" class="time-all">:</h>
+      <h class="time-all" id="secs1"></h>
+      <h class="time-all" id="secs2"></h>
+      <div id="fixme" class="fixed">
+        <div class="arrow-right" onclick="initiate()"><div id="pauseId"></div></div>
+        
+
+      </div>
+    </div>
+  </div>
+
+  <div class="selectContainer"> <div class="titles"><p class="divider1">Work Time</p><p class="divider2" >BreakTime</p></div>
+  <div class="optionsCont"><select name='workTime' class=" custom-select mb-2 mr-sm-2 mb-sm-0" id="workTime" onchange="setValues(this.value,breakTime.value)">
+    <option selected>Choose...</option>
+    <option value="01">01</option>    
+    <option value="15">15</option>
+    <option value="20">20</option>
+    <option value="25" selected="selected">25</option>
+    <option value="30">30</option>
+    <option value="35">35</option>
+    <option value="40">40</option>
+
+    </select>
+  
+  <a href="#" class="restart" onclick="restart()"><i class="fa fa-undo fa-4x  fa-flip-horizontal" aria-hidden="true"></i></a>
+  
+    <select name='breakTime' class="custom-select mb-2 mr-sm-2 mb-sm-0" id="breakTime" onchange="setValues(workTime.value,this.value,)">
+    <option selected>Choose...</option>
+    <option value="01">01</option>
+    <option value="05" selected="selected">5</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+  </select>
+    </div>
+    </div>
+
+<script>
+var get=document.getElementById('workTime');
+var endPoint=((2*(parseInt(get.value)))/60)+1.5;
+</script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+body {
+  background-color: #50b3b9 !important;
+}
+
+.containers {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+}
+
+#clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.time-all {
+  font-size: 80px;
+  font-family: 'Varela Round';
+}
+
+#time {
+  text-align: center;
+  width: 45%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.fixed {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
+.arrow-right {
+  margin-left: 50%;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid orange;
+  position: absolute;
+  cursor:pointer;
+}
+
+.arrow-right:hover {
+  border-left-color: #554348;
+}
+
+.arrow-right:active {
+  top: 5px;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid orange;
+}
+
+.pause {
+  position: absolute;
+  width: 20px;
+  height: 99px;
+  background-color: orange;
+  top: -49.5px;
+  left: -80px;
+}
+
+.pause:hover {
+  background-color: #554348;
+}
+
+.restart {
+  margin-top: 60px;
+  margin-left: 24px;
+  position: absolute;
+  color: white;
+}
+
+.selectContainer {
+  position: relative;
+  margin-top: 510px;
+
+}
+
+.titles {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Varela Round';
+  font-weight: 600;
+  color: white;
+  width:100%;
+}
+
+.divider1 {
+  margin-left: 10px;
+   display:inline;
+}
+.divider2 {
+  margin-left: 90px;
+   display:inline;
+}
+
+#breakTime,
+#workTime {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+}
+
+#breakTime {
+  margin-left: 100px;
+}
+
+#workTime {
+  margin-left: 10px;
+}
+
+.optionsCont {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50px;
+}
+.mainTitle {
+  margin-top:20px;
+  width: 100%;
+  text-align: center;
+  color:#554348;
+  font-size:40px;
+  font-weight:500;
+  font-family:'Varela Round'
+  
+}
+
+.dots {
+  position:absolute;
+  font-size:80px;
+  top:50px;
+  line-height: 30%;
+  width: 100%;
+  color:white;  
+}
