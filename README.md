@@ -1,3 +1,4 @@
-The Pomodoro-Clock can be found here:
+Created using HTML5 Canvas
 
- https://nixteridakis.github.io/Pomodoro-Clock/
+The Pomodoro-Clock can be found here:
+https://nixteridakis.github.io/Pomodoro-Clock/
